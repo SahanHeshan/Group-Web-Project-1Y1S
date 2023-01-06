@@ -1,0 +1,58 @@
+/* banner */
+#banner-c1{
+    background-attachment: fixed;   /* needed for scrolling  */
+    background-position: center;    /* needed for scrolling  */
+    background-repeat: no-repeat;   /* needed for scrolling  */
+    background-size: cover;         /* needed for scrolling  */
+    padding-top: 90px; 
+    color: white;
+}
+.bg1{
+    border-radius: 1.5vmin;
+    margin-bottom: 5%;
+}
+@media screen and (max-width:540px){
+    .btn{
+        margin: 2%;
+        width: 45%; 
+    }
+}
+@media screen and (min-width:540px){
+    .btn{
+        margin: 1%;
+        width: 23%; 
+    }
+}
+.btn:active{
+    background-color:none;
+
+}
+
+
+.btn-pos-1{
+    margin-left: 75vw;
+    font-size: 0.7em;
+    width: 6em;
+}
+/* content nav bar link, hover, active, focus and visited.*/
+.col-md-3 nav a{
+    color:#6F2C91 ;
+    font-size: 1em ;
+    font-weight: 500 ;
+}
+
+.col-md-3 nav a:hover{
+    color:#C7017F ;
+    box-shadow: var(--site-theme-sh1);
+}
+.col-md-9{
+    padding: 0;
+}
+.wd{
+    width: 95%;
+    margin: 0 2% !important;
+}
+.row{
+    --bs-gutter-x:0;
+}
+

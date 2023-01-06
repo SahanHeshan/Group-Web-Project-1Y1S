@@ -1,0 +1,285 @@
+*{
+  margin: 0;
+  padding:0%;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:root{
+  --site-theme-1:linear-gradient(60deg, #C7017F, #6F2C91);
+  --site-theme-2:linear-gradient(60deg, #6F2C91, #C7017F);
+  --site-theme-3:#C7017F;
+  --site-theme-4:#6F2C91;
+
+  --site-btn-1: linear-gradient(60deg, #ff6804, #facc00);
+  --site-btn-2: linear-gradient(60deg, #3204ff, #00c8fa);
+  --site-btn-3: linear-gradient(60deg, #facc00,#f7e183);
+  --site-btn-4: linear-gradient(60deg, #947fc7, #6200ff);
+  --site-btn-5: linear-gradient(120deg, #045cff 55%, #facc00 45%);
+  --site-btn-6: linear-gradient(60deg, #0066ff , #0068e9eb );
+  --site-btn-7: linear-gradient(90deg, #006eff 40%, #ff9204 1% );
+  --site-btn-8: linear-gradient(90deg,#df0000, #ff0000 );
+  --site-btn-9: linear-gradient(60deg,#07c1fa, #00e1ff );
+  --site-btn-10: linear-gradient(60deg,#aa0daf, #9a04ff );
+  --site-btn-11: linear-gradient(90deg,#df0000, #a50101 );
+
+  --site-theme-sh1:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+body {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x:hidden !important; /* Hide horizontal scrollbar */
+}
+a{
+  text-decoration: none;  /* remove default link view */
+  color: white;
+}
+
+
+  /*--------------------- navigatin bar ---------------------*/
+
+#navbar { 
+    top: 0;
+    position:fixed;
+    left: 0;
+    right:0;
+    width: 100%;
+    z-index: 100;
+    box-sizing: border-box;
+}
+  .navbar-brand{
+    width: 180px;
+  }
+  .navbar-brand img{
+    border-radius:  5vmin 5vmin ;
+    width:100%;
+  }
+
+  .navbar-expand-lg { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+    font-weight: 600;
+    color: #C7017F;
+    box-shadow: var(--site-theme-sh1);
+  }
+
+  .navbar-nav li a:hover{
+    color:#C7017F;
+    box-shadow: var(--site-theme-sh1);
+    border-radius:   1vmin ;
+    
+  }
+  .navbar-nav li a{
+    color:#6F2C91;
+    text-align:center;
+    padding: 0.8rem;
+    border-radius:   1vmin ;
+  }
+  .navbar-nav li a.active{
+    background-image: var(--site-theme-2);
+    color:white !important;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+
+/*----------------------------banner--------------------------------*/
+#banner{
+    background-image: linear-gradient(60deg, #6F2C91, #C7017F);
+    background-attachment: fixed;   /* needed for scrolling  */
+    background-position: center;    /* needed for scrolling  */
+    background-repeat: no-repeat;   /* needed for scrolling  */
+    background-size: cover;         /* needed for scrolling  */
+    padding-top: 90px; 
+    color: white;
+}
+
+.title{
+  overflow-wrap: break-word;
+  padding: 5%;
+}
+.title1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 5vmax;
+    margin: 1%;
+    padding: 1%;
+    line-height: 100%; /* reduce space between two lines*/
+}
+.bottom-img{
+  width:100%;
+  margin-bottom: -10px; 
+}
+/*----------------------------back to top button--------------------------------*/
+#scrollbtn{
+  width:30px;
+  height: 30px;
+  position: fixed;
+  bottom: 2vw;
+  right: 3vw;
+  background-image: var(--site-theme-1);
+  border-color: white;
+  border-radius: 50%;
+  box-shadow:0px 0px 18px 3px rgb(0 0 0 / 50%);
+  z-index: 50; 
+}
+.icon{
+  width:30px;
+  height: 30px;
+  bottom: 20px;
+  right: 30px;
+}
+#scrollbtn:hover{
+  width:50px;
+  height: 50px;
+  bottom: 1.5vw;
+  right: 2.5vw;
+  border-radius: 50%;
+  box-shadow:none
+}
+.icon:hover{
+  width:50px;
+  height: 50px;
+  bottom: 20px;
+  right: 30px;
+}
+ /*--------------------- next previous btn in slide show---------------------*/
+.carousel-control-next-icon {
+  background-image: url("../img/home/nextr.png") !important;
+  height: 3rem !important;
+  
+}
+.carousel-control-prev-icon {
+  background-image: url("#kept empty") !important;
+  height: 3rem !important;
+}
+  /*--------------------- animations moving lines---------------------*/
+  @keyframes anim1 { 
+  0%  {background-image: var(--site-theme-2);left:25% ;width:5%; } 
+  100%   {background-image: var(--site-theme-2);left:50% ; width:1;} 
+  
+  }
+
+
+  @keyframes anim2 {
+    0%   {background-image: var(--site-theme-2);left:50% ; width:1;}
+    100%  {background-image: var(--site-theme-2);left:25% ;width:5%; } 
+    
+  }
+
+  @keyframes fade-in {
+    0%  {opacity: 0;} 
+    100%   {opacity: 1;}
+  }
+/*----------------------------anim. appear--------------------------------*/
+.fade-in {
+  position:relative;
+  animation-name: fade-in;
+  animation-duration: 2s; 
+}
+/*----------------------cards in main content---------------------------*/
+.card{
+  margin:6% 2%;
+  padding: 3%;
+  box-shadow: var(--site-theme-sh1);
+  border-radius: 1vmin 10vmin 10vmin  !important;
+}
+    /*--------------------- buttons ---------------------*/
+  .btn{
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding: 0.8rem 1.2rem ;
+    border-radius: 0.5em;
+}
+.btn:hover{
+    box-shadow: var(--site-theme-sh1);
+    color: white;
+    
+}
+.typ{
+  background-image: var(--site-theme-2);
+}
+.typ1{
+    background-image: linear-gradient(60deg, #ff6804, #facc00);
+}
+.typ2{
+    background-image: linear-gradient(60deg, #3204ff, #00c8fa);
+}
+.typ3{
+    background-image: linear-gradient(60deg, #facc00,#f7e183);
+}
+.typ4{
+    background-image: linear-gradient(60deg, #947fc7, #6200ff);
+}
+.typ5{
+    background-image: linear-gradient(120deg, #045cff 55%, #facc00 45%);
+}
+.typ6{
+    background-image: linear-gradient(60deg, #0066ff , #0068e9eb )
+}
+.typ7{
+    background-image: linear-gradient(90deg, #006eff 40%, #ff9204 1% );
+}
+.typ8{
+    background-image: linear-gradient(90deg,#df0000, #ff0000 );
+}
+
+.typ9{
+    background-image: linear-gradient(60deg,#07c1fa, #00e1ff );
+}
+.typ10{
+    background-image: linear-gradient(60deg,#aa0daf, #9a04ff );
+}
+.typ11{
+    background-image: linear-gradient(90deg,#df0000, #a50101 );
+}
+.typ12{
+    background-image: var(--site-theme-2);
+}
+.typ13{
+  text-align: center;
+  font-size: 140%;
+  color: #aa0daf;
+  background-color:  #fff ;
+}
+  /*--------------------- footer ---------------------*/
+
+#footer{
+  background-image: linear-gradient(60deg, #6F2C91, #C7017F);
+  color: white;
+}
+.footer-img{
+  width:100%;
+  margin-top: -10px;
+}
+#footer p {
+  margin-top: 5%;
+  
+  text-align: center;
+}
+#footer h1 {
+  margin-top: 5%;
+  
+  text-align: center;
+}
+.img-wd{
+max-width: 15%;
+}
+.img-wd:hover{
+scale: 1.1;
+}
+.img-wd-1{
+  margin: 0 25% ;
+  width: 50%;
+  opacity: .25;
+  position: relative;
+  top:-27%
+  }
+  dd a:hover{
+    color:white;
+    box-shadow: var(--site-theme-sh1);
+    
+  }

@@ -1,0 +1,51 @@
+#custom-banner{ /* scrolling background image */
+    background-image: url("../img/news/img1.jpg");
+    background-attachment: fixed;   /* needed for scrolling ] */
+    background-position: center;    /* needed for scrolling ] */
+    background-repeat: no-repeat;   /* needed for scrolling ] */
+    background-size: cover;         /* needed for scrolling ] */
+    padding-top: 90px;
+    color: white;
+}
+.backgr1{
+    overflow-wrap: break-word;
+    color:white !important;
+    font-weight: 600;
+    font-size: 1.5vmax;
+    opacity:0.9;
+    border-radius: 0 0 0 8vmin;
+    background-color:white;
+    
+}
+.backgr2{
+    overflow-wrap: break-word;
+    color:white !important;
+    font-weight: 600;
+    font-size: 1.5vmax;
+    opacity:0.9;
+    border-radius: 0 8vmin 8vmin 0;
+    background-image: linear-gradient(60deg, #6F2C91, #C7017F);
+    
+}
+.padding{
+    padding-top:5% ;
+}
+a{
+    text-decoration: none;  /* remove default link view */
+    color: white;
+  }
+.card{
+    margin: 3% 2%;
+}
+.fade-in p a{
+    margin-left: 10%;
+    margin-right: 10%;
+    min-width: 80%;
+}
+.btn-primary{
+    background-image: var(--site-theme-2);
+    border-style: none;
+}
+.text-center{
+    text-align: center !important;
+}

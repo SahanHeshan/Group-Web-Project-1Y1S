@@ -1,0 +1,86 @@
+/*  banner  */
+#news-banner
+{
+    padding-top: 60vmin;   /* slide possition */
+    padding-top: 59px;
+    min-width: 100%;
+    position:static;
+    top: 0%;
+
+}
+.wave{
+    position:absolute;
+    bottom: 0%;
+    left: 0;
+    z-index:10 ;    /*wave image ontop of slides*/
+}
+.align-y-c{
+    bottom: 40% !important;
+}
+.align-y-c1{
+    bottom: 30% !important;
+}
+.bot-padd{
+    padding-bottom :5% !important;
+}
+.img-frm-1{
+    max-height: 800px;
+    min-width: 100vw;
+    
+}
+
+.p1{
+    overflow-wrap: break-word;  /* break long lines in to proper shape */
+    padding: 5vmin;
+}
+
+.link{
+    color: #6F2C91;
+    text-decoration: none !important ; /* REMOVE THE UNDRLINE IN LNKS*/
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 5vmax;
+    font-weight: 600;
+    overflow-wrap: break-word;  /* break long lines */
+    margin: 0%;
+    padding: 1% 0.5%;
+  }
+.link:hover{
+    color: #C7017F;
+}
+.backgr{
+    color:black !important;
+    font-size: 1.5vmax;
+    opacity:0.9;
+    border-radius:  1vmin 6vmin 6vmin ;
+    background-color: white;
+    
+}
+
+
+
+    /*  content  */
+
+h1.title2{
+        color: #6F2C91 !important;
+        text-align: center;
+        font-size: 5vmax;
+        padding: 3%;
+}
+.area1{
+    border:0.4em solid #ffffff;
+    border-radius:  3vmin 15vmin 15vmin ;
+    background:#ffffff;
+    padding: 3vmin;
+    margin-bottom: 6%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.img-frm1{  
+    border-radius:3vmin 15vmin 15vmin;  
+    min-width: 5vw;
+    max-width: 100%;
+    padding-bottom :5% !important;
+}
+.col-sm-9 a:hover,
+.col-sm-9 a{
+    color: #6F2C91;
+}

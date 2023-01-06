@@ -1,0 +1,74 @@
+
+.container .contactInfo
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    font-size: 20px;
+}
+.container.contactInfo.box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container.contactInfo.box.text
+{
+    display: flex;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+ 
+
+}
+
+.contactForm
+{   
+    margin-bottom: 10%;
+    border-radius: 10%;
+    padding: 40px;
+    background-image: var(--site-theme-2);
+    box-shadow: var(--site-theme-sh1);
+}
+.contactForm h2
+{
+    font-size:30px ;
+    color:#fff;
+    font-weight: 500;
+}
+.inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.inputBox input,
+.inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    resize: none;
+}
+.inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+span{
+    color: #fff;
+}

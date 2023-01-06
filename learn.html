@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Fundamentals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="img/icon.png" type="image/ico" >
+    <!--scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
+        crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/learn.css">
+
+  </head>
+  <body>
+    <!--navigation bar-->
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+          <div class="container-fluid">
+            <!--brand logo-->
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" /> </a>
+            <!--colapsing menue-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <!--menue items-->
+              <ul class="navbar-nav m-lg-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html"> HOME </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page"  href="learn.html"> Learn </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="news.html"> News </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="FAQS.html"> FAQs </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Us</a>
+                </li>
+  
+               
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </section>
+
+    <!--opening banners-->
+    <section id="banner">
+      <div class="container bg1">
+        <div class="row ">
+            <a class="typ13 btn " data-bs-toggle="collapse" href="#HTML" role="button"
+             aria-expanded="false" aria-controls="HTML"  onclick="sty('html')">
+              HTML
+            </a>
+            <a class="typ13 btn" data-bs-toggle="collapse" href="#CSS" role="button"
+             aria-expanded="false" aria-controls="CSS"  onclick="sty('css')">
+              CSS 
+            </a>
+            <a class="typ13 btn" data-bs-toggle="collapse" href="#JS" role="button"
+             aria-expanded="false" aria-controls="JS" data-bs-parent="#group1" onclick="sty('Java Script')">
+              Java Script
+            </a>
+            <a class="typ13 btn" data-bs-toggle="collapse" href="#PHP" role="button"
+             aria-expanded="false" aria-controls="PHP" data-bs-parent="#group1" onclick="sty('PHP')">
+              PHP
+            </a>
+            <a class="typ13 btn" data-bs-toggle="collapse" href="#Python" role="button"
+             aria-expanded="false" aria-controls="Python" onclick="sty('Python')">
+              Python
+            </a>
+            <a class="typ13 btn" data-bs-toggle="collapse" href="#J" role="button"
+             aria-expanded="false" aria-controls="Java" onclick="sty('Java')">
+              Java
+            </a>
+            <a class="typ13 btn" data-bs-toggle="collapse" href="#mysql" role="button"
+             aria-expanded="false" aria-controls="My SQL" onclick="sty('My SQL')">
+              My SQL
+            </a>
+            <a class="typ13 btn" data-bs-toggle="collapse" href="#oracle" role="button"
+             aria-expanded="false" aria-controls="oracle" onclick="sty('oracle')">
+              Oracle
+            </a>
+            <a class="typ13 btn" data-bs-toggle="collapse" href="#React" role="button"
+             aria-expanded="false" aria-controls="React" onclick="sty('React')">
+              React
+            </a>
+            <a class="typ13 btn" data-bs-toggle="collapse" href="#Bootstrap" role="button"
+             aria-expanded="false" aria-controls="Bootstrap" onclick="sty('Bootstrap')">
+              Bootstrap
+            </a>
+            <a class="typ13 btn" data-bs-toggle="collapse" href="#Angular" role="button"
+             aria-expanded="false" aria-controls="Angular" onclick="sty('Angular')">
+              Angular
+            </a>
+            <a class="typ13 btn" data-bs-toggle="collapse" href="#Sb1" role="button"
+             aria-expanded="false" aria-controls="Sb1" onclick="sty('def')">
+              Git Hub
+            </a>
+            <a class="typ13 btn" data-bs-toggle="collapse" href="#Sb2" role="button"
+             aria-expanded="false" aria-controls="Sb2" onclick="sty('def')">
+              RWD
+            </a>
+            <a class="typ13 btn" data-bs-toggle="collapse" href="#Sb3" role="button"
+             aria-expanded="false" aria-controls="Sb3" onclick="sty('def')">
+              Chatbots
+            </a>
+        </div>
+      </div>
+
+      <img src="img/wave.png" class="bottom-img">
+    </section>
+
+    <!--back to top buton-->
+    <a id="scrollbtn" href="#banner"><img class="icon"  src="img/home/up.png"/></a>
+
+    <script>/* script to set background color */  
+      function sty(x) {
+        switch (x){
+          case 'html':          document.getElementById("banner").style.backgroundImage = "var(--site-btn-1)"; break;
+          case 'css':           document.getElementById("banner").style.backgroundImage = "var(--site-btn-2)"; break;
+          case 'Java Script':   document.getElementById("banner").style.backgroundImage = "var(--site-btn-3)"; break;
+          case 'PHP':           document.getElementById("banner").style.backgroundImage = "var(--site-btn-4)"; break;
+          case 'Python':        document.getElementById("banner").style.backgroundImage = "var(--site-btn-5)"; break;
+          case 'Java':          document.getElementById("banner").style.backgroundImage = "var(--site-btn-6)"; break;
+          case 'My SQL':        document.getElementById("banner").style.backgroundImage = "var(--site-btn-7)"; break;
+          case 'oracle':        document.getElementById("banner").style.backgroundImage = "var(--site-btn-8)"; break;
+          case 'React':         document.getElementById("banner").style.backgroundImage = "var(--site-btn-9)"; break;
+          case 'Bootstrap':     document.getElementById("banner").style.backgroundImage = "var(--site-btn-10)"; break;
+          case 'Angular':       document.getElementById("banner").style.backgroundImage = "var(--site-btn-11)"; break;
+          default :             document.getElementById("banner").style.backgroundImage = "var(--site-theme-2)";   
+      }
+      }
+    </script>
+
+
+    <!------content------->  <!------fill text in these sections------->
+      <div class="collapse wd" id="HTML"> 
+      <button class="btn typ1 btn-pos-1" type="button" data-bs-toggle="collapse" data-bs-target="#HTML" 
+      aria-expanded="false" aria-controls="#HTML">Close</button>
+      <!--content for html-->
+      <div class="row">
+        <div class="col-md-3 "> 
+            <nav class="nav nav-pills flex-column d-md-block d-none" data-toggle="buttons">       
+              <a class="nav-link" href="#item-1">Introduction</a>                      <!--section 1 start-->
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-1-1">- HTML Attributes </a>        
+                <a class="nav-link ms-3 my-1" href="#item-1-2">- HTML Headings </a>
+              </nav>                                                             <!--section 1 end-->
+              <a class="nav-link" href="#item-2">Header And footer Tag</a>
+              <a class="nav-link" href="#item-3">HTML Text Formatting </a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-3-1">- Lists </a>
+              </nav>
+            </nav>                                                             
+          </nav>
+        </div>
+      
+        <div class="col-md-9">
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+            <div id="item-1">
+              <h4>Introduction</h4>
+              <p><pre>
+                    HTML is the standard markup language for Web pages.
+                    With HTML you can create your own Website.
+                    HTML is easy to learn - You will enjoy it!
+                  </pre>
+                <code >
+                  
+                  <pre >
+                    &lt;html&gt;
+                      &lt;head&gt;
+                          &lt;title&gt;Page Title &lt;/title&gt;
+                      &lt;/head&gt;
+                      &lt;body&gt;
+
+                        &lt;h1&gt;This is a Heading &lt;/h1&gt;
+                        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+                      &lt;/body&gt;
+                    &lt;/html&gt;
+                  
+                    
+                  </pre>
+                  
+                </code>
+                An HTML document should have
+                 
+                <ul>
+                  <li>A declaration at the top indicating it is a html document</li>
+                  <li>Adocument head</li>
+                  <li>A document body</li>
+                  <li>A collection of HTML elements</li>
+                </ul>
+                
+              </p>
+            </div>
+            <div id="Item-1-1">
+              <h5>HTML Attributes</h5>
+              <p><pre>
+                All Html elements can have attributes. Attributes provide additional information about elements.
+                Attributes are always specified in the start tag.
+                Example:
+                <code>
+                        &lt;a href="https://www.kln.ac.lk"&gt;University of Kelaniya &lt;a&gt;
+                </code>
+                </pre>
+              </p>
+            </div>
+            <div id="item-1-2">
+              <h5>HTML Headings</h5>
+              <p><pre>HTML headings are titles or subtitlesthat you want to display on a webpage.Html headings are defined with
+              &lt;h1&gt; to &lt;h6&gt; tags
+                      <ul>
+                        </code><li><code>&lt;h1&gt; defines the most important headings- Text size is largrer</code></li>
+                        <li><code>&lt;h6&gt; Usually defines the subheadings- Text size is smaller</code> </li>
+                      </ul>
+              </pre></p>
+            </div>
+            <div id="item-2">
+              <h4>Header And footer Tag</h4>
+              <p><pre>Header -tag is used as a container for the content of the webpage where we display what this website is about and the 
+website branding.Here we can include content which is duplicated in the webpages. 
+The tag used 
+
+              &lt;header&gt;       &lt;/header&gt;<br>
+Footer -tag is used to define a footer which is at the bottom area of our webpage or at specific section of the webpage. 
+The tag used 
+               &lt;footer&gt;    &lt;footer&gt;
+                 
+                 </pre> 
+              </p>
+            </div>
+            <div id="item-3">
+              <h4>HTML Text Formatting</h4>
+              <p><pre>
+                &lt;br&gt;    -Used to go to a new line 
+                &lt;b&gt;&lt;/b&gt; - Used to bold the content within the tag
+                &lt;i&gt;&lt;/i&gt; -Used to italic text within the tag
+                &lt;sup&gt;&lt;/sup&gt; -Used to create a superscript 
+                &lt;sub&gt;&lt;/sub&gt; -Used to create subscript
+              </pre></p>
+            </div>
+            <div id="item-3-1">
+              <h5>Lists</h5>
+              <p><pre>There are types of lists
+                <ul>
+                  <li>Unordered Lists - &lt;ul&gt;&lt;/ul&gt;</li>
+                  <li>Ordered Lists - &lt;ol&gt;&lt;/ol&gt;</li>
+                  <li>Description Lists - &lt;dl&gt;&lt;/dl&gt;</li>
+                </ul>
+              </pre></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+      <div class="collapse wd" id="CSS"> 
+      <button class="btn typ2 btn-pos-1" type="button" data-bs-toggle="collapse" data-bs-target="#CSS" 
+      aria-expanded="false" aria-controls="#CSS">Close</button>
+      <div class="row">
+        <div class="col-md-3">
+          <nav id="navbar-example3" class="d-md-block d-none h-100 flex-column align-items-stretch pe-4 border-end">
+            <nav class="nav nav-pills flex-column" data-toggle="buttons">
+              <a class="nav-link" href="#item-1">Introduction to CSS</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#css item-1-1">- External CSS </a>
+                <a class="nav-link ms-3 my-1" href="#css item-1-2">- Internal CSS </a>
+                <a class="nav-link ms-3 my-1" href="#css item-1-3">- Inline CSS </a>
+              </nav>
+              <a class="nav-link" href="#css item-2">Style Precedence </a>
+              <a class="nav-link" href="#css item-3">Property in CSS </a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#css item-3-1">- Text Property of CSS </a>
+                <a class="nav-link ms-3 my-1" href="#css item-3-2">Color Property Of CSS </a>
+                <a class="nav-link ms-3 my-1" href="#css item-3-3">Spacing Property Of CSS </a>
+              </nav>
+            </nav>
+          </nav>
+        </div>
+      
+        <div class="col-md-9">
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+            <div id="css item-1">
+              <h4>Introduction to CSS</h4>
+              <p><pre>
+              CSS Is abreviation for Cascading Style sheets
+              CSS describes how HTML elements are to be displayed on the screen. It is used to control the style of a web document
+                  A CSS style rule is made up of 3 parts </pre>
+                <dl>
+                  <dt><b>Selector </b></dt>
+                  <dd>HTML element to which the style is applied</dd>
+                  <dt><b>Property</b></dt>
+                  <dd>A property is type of attiribute of HTML tag </dd>
+                  <dt><b>Values</b></dt>
+                  <dd>Values are assigned to propertise</dd>
+                </uL><br>
+                There are 3 types of inseting a syle sheets
+                <ul>
+                  <li>External CSS</li>
+                  <li>Internal CSS</li>
+                  <li>Inline CSS</li>
+                </ul>
+                
+              </p>
+            </div>
+            <div id="css item-1-1">
+              <h5>External CSS</h5>
+              <p><pre>External style sheet can be written in any text editor and must be saved with .css extension
+The external CSS file should not have any HTML tag
+To link the external CSS file to HTML file we can use the &lt;link&gt;&lt;/link&gt; tag
+
+Example
+                       &lt;link&gt;rel="stylesheet" href="mystyle.css"&lt;/link&gt;
+              </pre></p>
+
+            </div>
+            <div id="css item-1-2">
+              <h5>Internal CSS</h5>
+              <p>The CSS elements are placed in &lt;style&gt;&lt;style&gt; tag. The style tag is placed int the head tag<br>
+                <pre>example
+                  <code>
+                    &lt;head&gt;
+                       &lt;style&gt;
+                           body{
+                            background-color:pink;
+                            
+                           }
+                           h1{
+                            color:maroon;
+                            margin-left:40px;
+
+                           }
+                       &lt;/style&gt;
+                    &lt;head&gt;
+                    &lt;body&gt;
+                       &lt;h1&gt;This is a heading&lt;/h1&gt;
+                       &lt;p&gt;This is a paragraph&lt;p&gt;
+                    &lt;body&gt;
+
+                  </code>
+
+                </pre>
+              </p>
+            </div>
+            <div id="css item-1-3">
+              <h5>Inline CSS</h5>
+              <p>This is CSS style affecting to a particular line <br>
+                Example
+                <pre>
+                  <code>
+                    &lt;body&gt;
+                    &lt;h1 style="color:blue; text-align:center;"&gt;
+                    &lt; style="color:red;"&gt;
+                    &lt;/body&gt;
+                    &lt;html&gt;
+                  </code>
+
+                </pre>
+              </p>
+            </div>
+            <div id="css item-2">
+              <h4>Style Precedence</h4>
+              <p> 
+                <ol>
+                  <li>Inline Style </li>
+                  <li>External and Internal style sheets</li>
+                  <li>Browser default</li>
+                </ol>
+              </p>
+            </div>
+            <div id="css item-3">
+              <h4>Property in CSS</h4>
+              <p>CSS property is used to style the HTML elements. Each html element can be styled using different CSS propertise.<br>
+                There are many CSS propertise to style the elements of HTML.<br>
+                <ul>
+                  <li>color</li>
+                  <li>Size</li>
+                  <li>border</li>
+                  <li>Text</li>
+
+                </ul>
+                A CSS property consits of a property name and property value. To specify more than one CSS property each pair is seperated <br>
+                by a semicolon
+              </p>
+            </div>
+            <div id="css item-3-1">
+              <h5>Text Property of CSS</h5>
+              <p><dl>
+                <dt>Font Family</dt>
+                <dd>Allow us to change the font type used .Any standard font is used</dd>
+                <dt>Font Size</dt>
+                <dd>May be specified using a few different ways.</dd>
+                <dt>Font Weight</dt>
+                <dd>May be specified using a few different ways</dd>
+              </ul></p>
+            </div>
+            <div id="css item-3-2">
+              <h5>Color Property Of CSS</h5>
+              <p><dl>
+                <dt>color</dt>
+                <dd>Allows to specify the color of the text</dd>
+                <dt>Backgroung Color</dt>
+                <dd>Allows us to specify the background color of an element</dd>
+              </dl></p>
+            </div>
+            <div id="css item-3-2">
+              <h5>Spacing Property of CSS</h5>
+              <p><dl>
+                <dt>padding</dt>
+                <dd>Refers to the space around our content</dd>
+                <dt>Margin</dt>
+                <dd>Similar to padding, That affects the spacing aroung the content</dd>
+                <dt>Border</dt>
+                <dd>Is in between the padding and margin</dd>
+              </dl></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+      <div class="collapse wd" id="JS">
+      <button class="btn typ3 btn-pos-1" type="button" data-bs-toggle="collapse" data-bs-target="#JS" 
+      aria-expanded="false" aria-controls="#JS">Close</button> 
+      <div class="row">
+        <div class="col-md-3 "> 
+            <nav class="nav nav-pills flex-column d-md-block d-none" data-toggle="buttons">       
+              <a class="nav-link" href="#item-1">Introduction</a>                      <!--section 1 start-->
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-1-1">- HTML Attributes </a>        
+                <a class="nav-link ms-3 my-1" href="#item-1-2">- HTML Headings </a>
+              </nav>                                                             <!--section 1 end-->
+              <a class="nav-link" href="#item-2">Header And footer Tag</a>
+              <a class="nav-link" href="#item-3">HTML Text Formatting </a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-3-1">- Lists </a>
+              </nav>
+            </nav>                                                             
+          </nav>
+        </div>
+      
+        <div class="col-md-9">
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+            <div id="item-1">
+              <h4>Introduction</h4>
+              <p><pre>
+                    HTML is the standard markup language for Web pages.
+                    With HTML you can create your own Website.
+                    HTML is easy to learn - You will enjoy it!
+                  </pre>
+                <code >
+                  
+                  <pre >
+                    &lt;html&gt;
+                      &lt;head&gt;
+                          &lt;title&gt;Page Title &lt;/title&gt;
+                      &lt;/head&gt;
+                      &lt;body&gt;
+
+                        &lt;h1&gt;This is a Heading &lt;/h1&gt;
+                        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+                      &lt;/body&gt;
+                    &lt;/html&gt;
+                  
+                    
+                  </pre>
+                  
+                </code>
+                An HTML document should have
+                 
+                <ul>
+                  <li>A declaration at the top indicating it is a html document</li>
+                  <li>Adocument head</li>
+                  <li>A document body</li>
+                  <li>A collection of HTML elements</li>
+                </ul>
+                
+              </p>
+            </div>
+            <div id="Item-1-1">
+              <h5>HTML Attributes</h5>
+              <p><pre>
+                All Html elements can have attributes. Attributes provide additional information about elements.
+                Attributes are always specified in the start tag.
+                Example:
+                <code>
+                        &lt;a href="https://www.kln.ac.lk"&gt;University of Kelaniya &lt;a&gt;
+                </code>
+                </pre>
+              </p>
+            </div>
+            <div id="item-1-2">
+              <h5>HTML Headings</h5>
+              <p><pre>HTML headings are titles or subtitlesthat you want to display on a webpage.Html headings are defined with
+              &lt;h1&gt; to &lt;h6&gt; tags
+                      <ul>
+                        </code><li><code>&lt;h1&gt; defines the most important headings- Text size is largrer</code></li>
+                        <li><code>&lt;h6&gt; Usually defines the subheadings- Text size is smaller</code> </li>
+                      </ul>
+              </pre></p>
+            </div>
+            <div id="item-2">
+              <h4>Header And footer Tag</h4>
+              <p><pre>Header -tag is used as a container for the content of the webpage where we display what this website is about and the 
+website branding.Here we can include content which is duplicated in the webpages. 
+The tag used 
+
+              &lt;header&gt;       &lt;/header&gt;<br>
+Footer -tag is used to define a footer which is at the bottom area of our webpage or at specific section of the webpage. 
+The tag used 
+               &lt;footer&gt;    &lt;footer&gt;
+                 
+                 </pre> 
+              </p>
+            </div>
+            <div id="item-3">
+              <h4>HTML Text Formatting</h4>
+              <p><pre>
+                &lt;br&gt;    -Used to go to a new line 
+                &lt;b&gt;&lt;/b&gt; - Used to bold the content within the tag
+                &lt;i&gt;&lt;/i&gt; -Used to italic text within the tag
+                &lt;sup&gt;&lt;/sup&gt; -Used to create a superscript 
+                &lt;sub&gt;&lt;/sub&gt; -Used to create subscript
+              </pre></p>
+            </div>
+            <div id="item-3-1">
+              <h5>Lists</h5>
+              <p><pre>There are types of lists
+                <ul>
+                  <li>Unordered Lists - &lt;ul&gt;&lt;/ul&gt;</li>
+                  <li>Ordered Lists - &lt;ol&gt;&lt;/ol&gt;</li>
+                  <li>Description Lists - &lt;dl&gt;&lt;/dl&gt;</li>
+                </ul>
+              </pre></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+      </div>
+
+      <div class="collapse wd" id="PHP">
+      <button class="btn typ4 btn-pos-1" type="button" data-bs-toggle="collapse" data-bs-target="#PHP" 
+      aria-expanded="false" aria-controls="#PHP">Close</button> 
+      <div class="row">
+        <div class="col-md-3 "> 
+            <nav class="nav nav-pills flex-column d-md-block d-none" data-toggle="buttons">       
+              <a class="nav-link" href="#item-1">Introduction</a>                      <!--section 1 start-->
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-1-1">- HTML Attributes </a>        
+                <a class="nav-link ms-3 my-1" href="#item-1-2">- HTML Headings </a>
+              </nav>                                                             <!--section 1 end-->
+              <a class="nav-link" href="#item-2">Header And footer Tag</a>
+              <a class="nav-link" href="#item-3">HTML Text Formatting </a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-3-1">- Lists </a>
+              </nav>
+            </nav>                                                             
+          </nav>
+        </div>
+      
+        <div class="col-md-9">
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+            <div id="item-1">
+              <h4>Introduction</h4>
+              <p><pre>
+                    HTML is the standard markup language for Web pages.
+                    With HTML you can create your own Website.
+                    HTML is easy to learn - You will enjoy it!
+                  </pre>
+                <code >
+                  
+                  <pre >
+                    &lt;html&gt;
+                      &lt;head&gt;
+                          &lt;title&gt;Page Title &lt;/title&gt;
+                      &lt;/head&gt;
+                      &lt;body&gt;
+
+                        &lt;h1&gt;This is a Heading &lt;/h1&gt;
+                        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+                      &lt;/body&gt;
+                    &lt;/html&gt;
+                  
+                    
+                  </pre>
+                  
+                </code>
+                An HTML document should have
+                 
+                <ul>
+                  <li>A declaration at the top indicating it is a html document</li>
+                  <li>Adocument head</li>
+                  <li>A document body</li>
+                  <li>A collection of HTML elements</li>
+                </ul>
+                
+              </p>
+            </div>
+            <div id="Item-1-1">
+              <h5>HTML Attributes</h5>
+              <p><pre>
+                All Html elements can have attributes. Attributes provide additional information about elements.
+                Attributes are always specified in the start tag.
+                Example:
+                <code>
+                        &lt;a href="https://www.kln.ac.lk"&gt;University of Kelaniya &lt;a&gt;
+                </code>
+                </pre>
+              </p>
+            </div>
+            <div id="item-1-2">
+              <h5>HTML Headings</h5>
+              <p><pre>HTML headings are titles or subtitlesthat you want to display on a webpage.Html headings are defined with
+              &lt;h1&gt; to &lt;h6&gt; tags
+                      <ul>
+                        </code><li><code>&lt;h1&gt; defines the most important headings- Text size is largrer</code></li>
+                        <li><code>&lt;h6&gt; Usually defines the subheadings- Text size is smaller</code> </li>
+                      </ul>
+              </pre></p>
+            </div>
+            <div id="item-2">
+              <h4>Header And footer Tag</h4>
+              <p><pre>Header -tag is used as a container for the content of the webpage where we display what this website is about and the 
+website branding.Here we can include content which is duplicated in the webpages. 
+The tag used 
+
+              &lt;header&gt;       &lt;/header&gt;<br>
+Footer -tag is used to define a footer which is at the bottom area of our webpage or at specific section of the webpage. 
+The tag used 
+               &lt;footer&gt;    &lt;footer&gt;
+                 
+                 </pre> 
+              </p>
+            </div>
+            <div id="item-3">
+              <h4>HTML Text Formatting</h4>
+              <p><pre>
+                &lt;br&gt;    -Used to go to a new line 
+                &lt;b&gt;&lt;/b&gt; - Used to bold the content within the tag
+                &lt;i&gt;&lt;/i&gt; -Used to italic text within the tag
+                &lt;sup&gt;&lt;/sup&gt; -Used to create a superscript 
+                &lt;sub&gt;&lt;/sub&gt; -Used to create subscript
+              </pre></p>
+            </div>
+            <div id="item-3-1">
+              <h5>Lists</h5>
+              <p><pre>There are types of lists
+                <ul>
+                  <li>Unordered Lists - &lt;ul&gt;&lt;/ul&gt;</li>
+                  <li>Ordered Lists - &lt;ol&gt;&lt;/ol&gt;</li>
+                  <li>Description Lists - &lt;dl&gt;&lt;/dl&gt;</li>
+                </ul>
+              </pre></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="collapse wd" id="Python">
+      <button class="btn typ5 btn-pos-1" type="button" data-bs-toggle="collapse" data-bs-target="#Python" 
+      aria-expanded="false" aria-controls="#Python">Close</button> 
+      <div class="row">
+        <div class="col-md-3 "> 
+            <nav class="nav nav-pills flex-column d-md-block d-none" data-toggle="buttons">       
+              <a class="nav-link" href="#item-1">Introduction</a>                      <!--section 1 start-->
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-1-1">- HTML Attributes </a>        
+                <a class="nav-link ms-3 my-1" href="#item-1-2">- HTML Headings </a>
+              </nav>                                                             <!--section 1 end-->
+              <a class="nav-link" href="#item-2">Header And footer Tag</a>
+              <a class="nav-link" href="#item-3">HTML Text Formatting </a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-3-1">- Lists </a>
+              </nav>
+            </nav>                                                             
+          </nav>
+        </div>
+      
+        <div class="col-md-9">
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+            <div id="item-1">
+              <h4>Introduction</h4>
+              <p><pre>
+                    HTML is the standard markup language for Web pages.
+                    With HTML you can create your own Website.
+                    HTML is easy to learn - You will enjoy it!
+                  </pre>
+                <code >
+                  
+                  <pre >
+                    &lt;html&gt;
+                      &lt;head&gt;
+                          &lt;title&gt;Page Title &lt;/title&gt;
+                      &lt;/head&gt;
+                      &lt;body&gt;
+
+                        &lt;h1&gt;This is a Heading &lt;/h1&gt;
+                        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+                      &lt;/body&gt;
+                    &lt;/html&gt;
+                  
+                    
+                  </pre>
+                  
+                </code>
+                An HTML document should have
+                 
+                <ul>
+                  <li>A declaration at the top indicating it is a html document</li>
+                  <li>Adocument head</li>
+                  <li>A document body</li>
+                  <li>A collection of HTML elements</li>
+                </ul>
+                
+              </p>
+            </div>
+            <div id="Item-1-1">
+              <h5>HTML Attributes</h5>
+              <p><pre>
+                All Html elements can have attributes. Attributes provide additional information about elements.
+                Attributes are always specified in the start tag.
+                Example:
+                <code>
+                        &lt;a href="https://www.kln.ac.lk"&gt;University of Kelaniya &lt;a&gt;
+                </code>
+                </pre>
+              </p>
+            </div>
+            <div id="item-1-2">
+              <h5>HTML Headings</h5>
+              <p><pre>HTML headings are titles or subtitlesthat you want to display on a webpage.Html headings are defined with
+              &lt;h1&gt; to &lt;h6&gt; tags
+                      <ul>
+                        </code><li><code>&lt;h1&gt; defines the most important headings- Text size is largrer</code></li>
+                        <li><code>&lt;h6&gt; Usually defines the subheadings- Text size is smaller</code> </li>
+                      </ul>
+              </pre></p>
+            </div>
+            <div id="item-2">
+              <h4>Header And footer Tag</h4>
+              <p><pre>Header -tag is used as a container for the content of the webpage where we display what this website is about and the 
+website branding.Here we can include content which is duplicated in the webpages. 
+The tag used 
+
+              &lt;header&gt;       &lt;/header&gt;<br>
+Footer -tag is used to define a footer which is at the bottom area of our webpage or at specific section of the webpage. 
+The tag used 
+               &lt;footer&gt;    &lt;footer&gt;
+                 
+                 </pre> 
+              </p>
+            </div>
+            <div id="item-3">
+              <h4>HTML Text Formatting</h4>
+              <p><pre>
+                &lt;br&gt;    -Used to go to a new line 
+                &lt;b&gt;&lt;/b&gt; - Used to bold the content within the tag
+                &lt;i&gt;&lt;/i&gt; -Used to italic text within the tag
+                &lt;sup&gt;&lt;/sup&gt; -Used to create a superscript 
+                &lt;sub&gt;&lt;/sub&gt; -Used to create subscript
+              </pre></p>
+            </div>
+            <div id="item-3-1">
+              <h5>Lists</h5>
+              <p><pre>There are types of lists
+                <ul>
+                  <li>Unordered Lists - &lt;ul&gt;&lt;/ul&gt;</li>
+                  <li>Ordered Lists - &lt;ol&gt;&lt;/ol&gt;</li>
+                  <li>Description Lists - &lt;dl&gt;&lt;/dl&gt;</li>
+                </ul>
+              </pre></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="collapse wd" id="J"> 
+      <button class="btn typ6 btn-pos-1" type="button" data-bs-toggle="collapse" data-bs-target="#J" 
+      aria-expanded="false" aria-controls="#J">Close</button>
+      <div class="row">
+        <div class="col-3">
+          <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#item-1">Item 1</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+              </nav>
+              <a class="nav-link" href="#item-2">Item 2</a>
+              <a class="nav-link" href="#item-3">Item 3</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+              </nav>
+            </nav>
+          </nav>
+        </div>
+      
+        <div class="col-9">
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+            <div id="item-1">
+              <h4>Item 1</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                 tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                 quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                  asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-1-1">
+              <h5>Item 1-1</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-1-2">
+              <h5>Item 1-2</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-2">
+              <h4>Item 2</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-3">
+              <h4>Item 3</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-3-1">
+              <h5>Item 3-1</h5>
+              <p>...</p>
+            </div>
+            <div id="item-3-2">
+              <h5>Item 3-2</h5>
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="collapse wd" id="mysql"> 
+      <button class="btn typ7 btn-pos-1" type="button" data-bs-toggle="collapse" data-bs-target="#mysql" 
+      aria-expanded="false" aria-controls="#My SQL">Close</button>
+      <div class="row">
+        <div class="col-3">
+          <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#item-1">Item 1</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+              </nav>
+              <a class="nav-link" href="#item-2">Item 2</a>
+              <a class="nav-link" href="#item-3">Item 3</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+              </nav>
+            </nav>
+          </nav>
+        </div>
+      
+        <div class="col-9">
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+            <div id="item-1">
+              <h4>Item 1</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                 tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                 quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                  asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-1-1">
+              <h5>Item 1-1</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-1-2">
+              <h5>Item 1-2</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-2">
+              <h4>Item 2</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-3">
+              <h4>Item 3</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-3-1">
+              <h5>Item 3-1</h5>
+              <p>...</p>
+            </div>
+            <div id="item-3-2">
+              <h5>Item 3-2</h5>
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="collapse wd" id="oracle"> 
+      <button class="btn typ8 btn-pos-1" type="button" data-bs-toggle="collapse" data-bs-target="#oracle" 
+      aria-expanded="false" aria-controls="#oracle">Close</button>
+      <div class="row">
+        <div class="col-3">
+          <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#item-1">Item 1</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+              </nav>
+              <a class="nav-link" href="#item-2">Item 2</a>
+              <a class="nav-link" href="#item-3">Item 3</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+              </nav>
+            </nav>
+          </nav>
+        </div>
+      
+        <div class="col-9">
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+            <div id="item-1">
+              <h4>Item 1</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                 tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                 quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                  asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-1-1">
+              <h5>Item 1-1</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-1-2">
+              <h5>Item 1-2</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-2">
+              <h4>Item 2</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-3">
+              <h4>Item 3</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-3-1">
+              <h5>Item 3-1</h5>
+              <p>...</p>
+            </div>
+            <div id="item-3-2">
+              <h5>Item 3-2</h5>
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="collapse wd" id="React"> 
+      <button class="btn typ9 btn-pos-1" type="button" data-bs-toggle="collapse" data-bs-target="#React" 
+      aria-expanded="false" aria-controls="#React">Close</button>
+      <div class="row">
+        <div class="col-3">
+          <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#item-1">Item 1</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+              </nav>
+              <a class="nav-link" href="#item-2">Item 2</a>
+              <a class="nav-link" href="#item-3">Item 3</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+              </nav>
+            </nav>
+          </nav>
+        </div>
+      
+        <div class="col-9">
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+            <div id="item-1">
+              <h4>Item 1</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                 tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                 quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                  asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-1-1">
+              <h5>Item 1-1</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-1-2">
+              <h5>Item 1-2</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-2">
+              <h4>Item 2</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-3">
+              <h4>Item 3</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-3-1">
+              <h5>Item 3-1</h5>
+              <p>...</p>
+            </div>
+            <div id="item-3-2">
+              <h5>Item 3-2</h5>
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="collapse wd" id="Bootstrap"> 
+      <button class="btn typ10 btn-pos-1" type="button" data-bs-toggle="collapse" data-bs-target="#Bootstrap" 
+      aria-expanded="false" aria-controls="#Bootstrap">Close</button>
+      <div class="row">
+        <div class="col-3">
+          <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#item-1">Item 1</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+              </nav>
+              <a class="nav-link" href="#item-2">Item 2</a>
+              <a class="nav-link" href="#item-3">Item 3</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+              </nav>
+            </nav>
+          </nav>
+        </div>
+      
+        <div class="col-9">
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+            <div id="item-1">
+              <h4>Item 1</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                 tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                 quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                  asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-1-1">
+              <h5>Item 1-1</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-1-2">
+              <h5>Item 1-2</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-2">
+              <h4>Item 2</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-3">
+              <h4>Item 3</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-3-1">
+              <h5>Item 3-1</h5>
+              <p>...</p>
+            </div>
+            <div id="item-3-2">
+              <h5>Item 3-2</h5>
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="collapse wd" id="Angular"> 
+      <button class="btn typ11 btn-pos-1" type="button" data-bs-toggle="collapse" data-bs-target="#Angular" 
+      aria-expanded="false" aria-controls="#Angular">Close</button>
+      <div class="row">
+        <div class="col-3">
+          <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#item-1">Item 1</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+              </nav>
+              <a class="nav-link" href="#item-2">Item 2</a>
+              <a class="nav-link" href="#item-3">Item 3</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+              </nav>
+            </nav>
+          </nav>
+        </div>
+      
+        <div class="col-9">
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+            <div id="item-1">
+              <h4>Item 1</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                 tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                 quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                  asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-1-1">
+              <h5>Item 1-1</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-1-2">
+              <h5>Item 1-2</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-2">
+              <h4>Item 2</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-3">
+              <h4>Item 3</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-3-1">
+              <h5>Item 3-1</h5>
+              <p>...</p>
+            </div>
+            <div id="item-3-2">
+              <h5>Item 3-2</h5>
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="collapse wd" id="Sb1">
+      <button class="btn typ btn-pos-1" type="button" data-bs-toggle="collapse" data-bs-target="#Sb1" 
+      aria-expanded="false" aria-controls="#Sb1">Close</button> 
+      <div class="row">
+        <div class="col-3">
+          <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#item-1">Item 1</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+              </nav>
+              <a class="nav-link" href="#item-2">Item 2</a>
+              <a class="nav-link" href="#item-3">Item 3</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+              </nav>
+            </nav>
+          </nav>
+        </div>
+      
+        <div class="col-9">
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+            <div id="item-1">
+              <h4>Item 1</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                 tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                 quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                  asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-1-1">
+              <h5>Item 1-1</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-1-2">
+              <h5>Item 1-2</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-2">
+              <h4>Item 2</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-3">
+              <h4>Item 3</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-3-1">
+              <h5>Item 3-1</h5>
+              <p>...</p>
+            </div>
+            <div id="item-3-2">
+              <h5>Item 3-2</h5>
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="collapse wd" id="Sb2"> 
+      <button class="btn typ btn-pos-1" type="button" data-bs-toggle="collapse" data-bs-target="#Sb2" 
+      aria-expanded="false" aria-controls="#Sb2">Close</button> 
+      <div class="row">
+        <div class="col-3">
+          <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#item-1">Item 1</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+              </nav>
+              <a class="nav-link" href="#item-2">Item 2</a>
+              <a class="nav-link" href="#item-3">Item 3</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+              </nav>
+            </nav>
+          </nav>
+        </div>
+      
+        <div class="col-9">
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+            <div id="item-1">
+              <h4>Item 1</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                 tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                 quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                  asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-1-1">
+              <h5>Item 1-1</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-1-2">
+              <h5>Item 1-2</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-2">
+              <h4>Item 2</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-3">
+              <h4>Item 3</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-3-1">
+              <h5>Item 3-1</h5>
+              <p>...</p>
+            </div>
+            <div id="item-3-2">
+              <h5>Item 3-2</h5>
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="collapse wd" id="Sb3"> 
+      <button class="btn typ btn-pos-1" type="button" data-bs-toggle="collapse" data-bs-target="#Sb3" 
+      aria-expanded="false" aria-controls="#Sb3">Close</button> 
+      <div class="row">
+        <div class="col-3">
+          <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#item-1">Item 1</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+              </nav>
+              <a class="nav-link" href="#item-2">Item 2</a>
+              <a class="nav-link" href="#item-3">Item 3</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+              </nav>
+            </nav>
+          </nav>
+        </div>
+      
+        <div class="col-9">
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+            <div id="item-1">
+              <h4>Item 1</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                 tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                 quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                  asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-1-1">
+              <h5>Item 1-1</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-1-2">
+              <h5>Item 1-2</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-2">
+              <h4>Item 2</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-3">
+              <h4>Item 3</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam culpa non voluptatum,
+                tenetur alias placeat, nobis quia ex officiis necessitatibus neque sed vero facere 
+                quisquam exercitationem hic quibusdam illo! Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Reprehenderit voluptatum accusamus eius et cumque. Fuga maiores cupiditate ea doloremque 
+                 asperiores neque cum. Inventore nesciunt vel eveniet, blanditiis ipsam harum error.</p>
+            </div>
+            <div id="item-3-1">
+              <h5>Item 3-1</h5>
+              <p>...</p>
+            </div>
+            <div id="item-3-2">
+              <h5>Item 3-2</h5>
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+ 
+
+    <!--------------footer section------------->
+    <section id="footer">
+      <img class="footer-img" src="img/wave 2.png" alt="">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p >This Web Site was made in hopes of helping the future web developers so they could choose their future paths while
+                being equiped with the proper knowledge.
+            </p>
+            <div class="text-center">
+             
+              <dt>Mail: </dt><dd><address><a href="mailto:WebFundamentals@gmail.com">WebFundamentals@gmail.com</a></address></dd>           
+              <dt>Phone No::</dt><dd><a href="tel:+">+328445632</a></dd>     
+              <dt>Address:</dt><dd>B2, Dambadeniya, Colombo, Sri Lanka </dd>
+              <dt>For more:</dt><dd><a href="contact.html">Contact Us</a></dd>
+             <p class="title3">Join With Us :<br><a href="https://www.facebook.com" target="_blank"><img class="img-wd" src="img/fb.png"></a>
+              <a href="https://www.instagram.com" target="_blank"><img class="img-wd" src="img/insta.png"></a>
+              <a href="https://www.twitter.com" target="_blank"><img class="img-wd" src="img/twit.png"></a>
+              <a href="https://www.whatsapp.com" target="_blank"><img class="img-wd" src="img/whats.png"></a>
+              </p>
+            </div>  
+          </div>
+        
+          <div class="col-md-6">
+            <h1>Thank You for <br>visiting Web Fundamentals.com 
+            <img class="img-wd-1" src="img/icon.png"></h1>
+          </div>
+        </div>
+    </div>
+  </div>
+    </section>
+  </body>
+</html>

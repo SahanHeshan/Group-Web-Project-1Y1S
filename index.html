@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Fundamentals</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="img/icon.png" type="image/ico" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
+        crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/home.css">
+
+  </head>
+  <body>
+  <!--navigation bar-->
+  <section id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+          <!--brand logo-->
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png" /> </a>
+          <!--colapsing menue-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <!--menue items-->
+            <ul class="navbar-nav m-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="learn.html">Learn</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="FAQS.html">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </section>
+  <!--opening banners-->
+  <section id="banner">
+    <div class="container ">
+        <div class="row ">
+            <div class="col-md-8 text-center">
+                <p class="title1 fade-in">Learning</p>
+               <div class="title2"> <p class="typ-anim"> WEB DEVELOPMENT . . . </p></div>
+                  <p class="title3" > Welcome to our knowledge-sharing web platform where you will get to learn 
+                    everything about web designing. Get to know more about the fundamental topics in web development
+                     such as Client-side coding, Server-side coding and Database managing. So, explore our site to 
+                     further improve your knowledge on the rapidly changing web designing field.
+                  </p>
+               
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="img/home/layer1.png" class="img-fluid">
+            </div>
+        
+        </div>
+    </div>
+    <img src="img/wave.png" class="bottom-img">
+  </section>
+  <!--back to top buton-->
+  <a id="scrollbtn" href="#banner"><img class="icon"  src="img/home/up.png"/></a>
+
+  <!--main Topics-->
+  <section id="content-types">
+    <div class="container">
+      <div class="animation2"></div>
+      <h1><em class="title4">Main Topics</em></h1>
+      <div class="animation1"></div>
+      
+      <div class="row">
+
+        <div class="col-md-1 space"></div>
+        <div class="col-md-5 space ">
+          <div class="area1 fade-in">
+            <h1 class="title5 title">Client Side Coding</h1>
+            
+              <table class="table1">
+              <tr>
+                
+                <td><a href="#html"><img src="img/home/logo1.png"  alt=""></a></td>
+                <td><a href="#html"><h2 class="type1">HTML</h2>                        </a></td>
+              </tr>
+              <tr>
+                <td><a href="#CSS"><img src="img/home/logo2.png"  alt=""></a></td>
+                <td><a href="#CSS"><h2 class="type1">CSS</h2>                         </a></td>
+              </tr>
+              <tr>
+                <td><a href="#JS"><img src="img/home/logo3.png"  alt=""></a></td>
+                <td><a href="#JS"><h2 class="type1">Java Script</h2>                 </a></td>
+              </tr>
+              </table>
+            
+          </div>           
+        </div>
+
+        <div class="col-md-5 space ">
+          <div class="area2 fade-in">
+            <h1 class="title6 title">Server Side Coding</h1>
+          
+            <table class="table1">
+            <tr>
+              
+              <td><a href="#PHP"><img src="img/home/logo4.png"  alt=""></a></td>
+              <td><a href="#PHP"><h2 class="type2">PHP</h2>                        </a></td>
+            </tr>
+            <tr>
+              <td><a href="#Python"><img src="img/home/logo5.png"  alt=""></a></td>
+              <td><a href="#Python"><h2 class="type2">Python</h2>                         </a></td>
+            </tr>
+            <tr>
+              <td><a href="#J"><img src="img/home/logo6.png"  alt=""></a></td>
+              <td><a href="#J"><h2 class="type2">Java</h2>                 </a></td>
+            </tr>
+            </table>
+             
+          </div> 
+        </div>  
+        <div class="col-md-1 space"></div>
+
+      </div>
+      <div class="row">
+
+        <div class="col-md-1 space"></div>
+        <div class="col-md-5 space">
+          <div class="area4 fade-in">
+            <h1 class="title8 title">Web Designing Frameworks</h1>
+            
+            <table class="table1">
+            <tr>
+              
+              <td><a href="#React"><img src="img/home/logo9.png"  alt=""></a></td>
+              <td><a href="#React"><h2 class="type4">React</h2>                        </a></td>
+            </tr>
+            <tr>
+              <td><a href="#Bootstrap"><img src="img/home/logo11.png"  alt=""></a></td>
+              <td><a href="#Bootstrap"><h2 class="type4">Bootstrap</h2>                         </a></td>
+            </tr>
+            <tr>
+              <td><a href="#Angular"><img src="img/home/logo10.png"  alt=""></a></td>
+              <td><a href="#Angular"><h2 class="type4">Angular</h2>                 </a></td>
+            </tr>
+            </table>
+            
+          </div>
+        </div>
+        <div class="col-md-5 space">
+          <div class="area3 fade-in">
+            <h1 class="title7 title">Data Base Managing Systems</h1>
+            
+            <table class="table1">
+            <tr>
+              
+              <td><a href="#mysql"><img src="img/home/logo7.jpg"  alt=""></a></td>
+              <td><a href="#mysql"><h2 class="type3">My SQL</h2>                        </a></td>
+            </tr>
+            <tr>
+              <td><a href="#oracle"><img src="img/home/logo8.png"  alt=""></a></td>
+              <td><a href="#oracle"><h2 class="type3">Oracle</h2>                         </a></td>
+            </tr>
+
+            </table>
+            
+          </div> 
+        </div>
+        <div class="col-md-1 space"></div>
+
+      </div>
+    </div>
+  </section>
+
+   <!-- sub Topics-->
+  <section id="content-types">
+    <div class="container">
+      <div class="animation2"></div>
+      <h1> <em class="title4">Sub Topics</em></h1>
+      <div class="animation1"></div>
+    </div>
+    <div id="custom-banner">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">           
+            <div class="card mb-10 height" ;>
+              <div class="row g-0 text-center">
+                <div class="col-md-2" style="max-width: 50em;">
+                  <img src="img/home/logo12.png" class="img-fluid rounded-start im-size "  alt="...">
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 ><em class="typ12 title10">What is Git Hub? And how to get started..</em></h5>
+                    <p class="card-text text-black">
+                      GitHub, Inc. is an Internet hosting service for software development and version control using Git.
+                       It provides the distributed version control of Git plus access control, bug tracking, software feature 
+                       requests, task management, continuous integration, and wikis for every project.
+                       <br><br><a class="typ12 btn" href="learn.html">Read more</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="6000">           
+            <div class="card mb-10 height " ;>
+              <div class="row g-0 text-center">
+                <div class="col-md-2" style="max-width: 50em;">
+                  <img src="img/home/im2.jpg" class="img-fluid rounded-start im-size "  alt="...">
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 ><em class="typ12 title10">Responsive Web Design: Key to making a good website</em></h5>
+                    <p class="card-text text-black">
+                      Responsive web design (RWD) is a web design approach to make web pages that render well on all
+                       screen sizes and resolutions while ensuring good usability. This enables automatic adaption to the screen, whether the content is viewed on a tablet, phone, television, or watch.
+                       <br><br><a class="typ12 btn" href="learn.html">Read more</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="6000">           
+            <div class="card mb-10 height " ;>
+              <div class="row g-0 text-center">
+                <div class="col-md-2" style="max-width: 50em;">
+                  <img src="img/home/im3.png" class="img-fluid rounded-start im-size "  alt="...">
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 ><em class="typ12 title10">Implementing Chatbots</em></h5>
+                    <p class="card-text text-black">
+                      A chatbot or chatterbot is a software application used to conduct an on-line chat 
+                      conversation via text or text-to-speech, in lieu of providing direct contact with a live human agent.
+                       <br><br><a class="typ12 btn" href="learn.html">Read more</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!------content------->
+  <section id="html">
+    <div class="card mb-10 fade-in ">
+      <div class="row g-0 text-center">
+        <div class="col-md-2 ">
+          <img src="img/home/logo1.png" class="img-fluid rounded-start im-size"  alt="...">
+        </div>
+        <div class="col-md-10">
+          <div class="card-body">
+            <h5 ><em class="typ1">HTML</em></h5>
+            <p class="card-text ">The HyperText Markup Language or HTML is the standard markup language for documents designed to
+               be displayed in a web browser.
+              It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.
+              <div class="row g-0 text-center">
+                <div class="col-md-4 ">
+                  <dt>Latest release: </dt><dd> HTML 5.3</dd>
+                </div>
+                <div class="col-md-4 "> 
+                  <dt>Developed by: </dt><dd>WHATWG</dd>
+                </div>  
+                <div class="col-md-4 ">
+                  <dt>Extended from:</dt><dd> SGML</dd>
+                </div>  
+                <div class="col-md-4 ">
+                  <dl><dt>Extended to:</dt><dd> XHTML</dd>
+                </div>
+                <div class="col-md-4 ">
+                  <dt>Initial release:</dt><dd> 1993- 29 years ago</dd>
+                </div>
+                <div class="col-md-4 ">
+                  <a class="typ1 btn"  href="learn.html">View more</a>
+                </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="CSS">
+    <div class="card mb-10 fade-in" >
+      <div class="row g-0 text-center">
+        <div class="col-md-2 ">
+          <img src="img/home/logo2.png" class="img-fluid rounded-start im-size" alt="...">
+        </div>
+        <div class="col-md-10">
+          <div class="card-body">
+            <h5 ><em class="typ2">CSS</em></h5>
+            <p class="card-text">
+              Cascading Style Sheets is a style sheet language used for describing the presentation
+               of a document written in a markup language such as HTML or XML. CSS is a 
+               cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+              <div class="row g-0 text-center">
+                <div class="col-md-4 ">
+                  <dt>Latest release: </dt><dd> CSS 2.1: Level 2 Revision 1; 12 April 2016; 6 years ago</dd>
+                </div>
+                <div class="col-md-4 "> 
+                  <dt>Developed by: </dt><dd>World Wide Web Consortium (W3C)</dd>
+                </div>  
+                <div class="col-md-4 ">
+                  <dt>Container for:</dt><dd>  Style rules for HTML elements (tags)</dd>
+                </div>  
+                <div class="col-md-4 ">
+                  <dl> <dt></dt><dd> </dd>
+                </div>
+                <div class="col-md-4 ">
+                  <dt>Initial release:</dt><dd> 17 December 1996; 26 years ago</dd>
+                </div>
+                <div class="col-md-4 ">
+                  <a class="typ2 btn" href="learn.html">View more</a>
+                </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="JS">
+    <div class="card mb-10 fade-in" >
+      <div class="row g-0 text-center">
+        <div class="col-md-2 ">
+          <img src="img/home/logo3.png" class="img-fluid rounded-start im-size" alt="...">
+        </div>
+        <div class="col-md-10 ">
+          <div class="card-body">
+            <h5><em class="typ3">Java Script</em></h5>
+            <p class="card-text">JavaScript, often abbreviated as JS, is a programming language that is one of
+               the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use
+                JavaScript on the client side for webpage behavior, often incorporating third-party libraries.
+              <div class="row g-0 text-center">
+                <div class="col-md-4 ">
+                  <dt>Preview release: </dt><dd> ECMAScript 2022 /<br> 22 July 2021; 17 months ago</dd>
+                </div>
+                <div class="col-md-4 "> 
+                  <dt>Developed by: </dt><dd>Brendan Eich</dd>
+                </div>  
+                <div class="col-md-4 ">
+                  <dl><dt>Typing discipline:</dt><dd>  Dynamic, weak, duck</dd>
+                </div>
+                <div class="col-md-4 ">
+                  <dt>Paradigm:</dt><dd> Event-driven, functional, imperative, procedural, object-oriented programming</dd>
+                </div>  
+                <div class="col-md-4 ">
+                  <dt>Initial release:</dt><dd> December 4, 1995; 27 years ago</dd>
+                </div>
+                <div class="col-md-4 ">
+                  <a class="typ3 btn" href="learn.html">View more</a>
+                </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="PHP">
+    <div class="card mb-10 fade-in" ;>
+      <div class="row g-0 text-center">
+        <div class="col-md-2" style="max-width: 50em;">
+          <img src="img/home/logo4.png" class="img-fluid rounded-start im-size"  alt="...">
+        </div>
+        <div class="col-md-10">
+          <div class="card-body">
+            <h5><em  class="typ4">PHP</em></h5>
+            <p class="card-text">PHP is a general-purpose scripting language geared toward web development.
+               It was originally created by Danish-Canadian programmer Rasmus Lerdorf in 1993 and released in 1995.
+                The PHP reference implementation is now produced by The PHP Group.
+              <div class="row g-0 text-center">
+                <div class="col-md-4 ">
+                  <dt>Latest release: </dt><dd> 8.2.0 / 2022-12-08</dd>
+                </div>
+                <div class="col-md-4 "> 
+                  <dt>Developed by: </dt><dd>Rasmus Lerdorf</dd>
+                </div>  
+                <div class="col-md-4 ">
+                  <dl><dt>Typing discipline:</dt><dd>  Dynamic, weak, gradual</dd>
+                </div>
+                <div class="col-md-4 ">
+                  <dt>Paradigm:</dt><dd> Multi-paradigm: imperative, functional, object-oriented, procedural, reflective</dd>
+                </div>  
+                <div class="col-md-4 ">
+                  <dt>Initial release:</dt><dd>  June 8, 1995; 27 years ago</dd>
+                </div>
+                <div class="col-md-4 ">
+                  <a class="typ4 btn" href="learn.html">View more</a>
+                </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Python">
+    <div class="card mb-10 fade-in" >
+      <div class="row g-0 text-center">
+        <div class="col-md-2">
+          <img src="img/home/logo5.png" class="img-fluid rounded-start im-size" alt="...">
+        </div>
+        <div class="col-md-10">
+          <div class="card-body">
+            <h5><em  class="typ5">Python</em></h5>
+            <p class="card-text">Python is a high-level, general-purpose programming language. 
+              Its design philosophy emphasizes code readability with the use of significant indentation.
+               Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured,
+                object-oriented and functional programming.
+              <div class="row g-0 text-center">
+                <div class="col-md-4 ">
+                  <dt>Latest release: </dt><dd> 3.12.0a3 / 6 December 2022</dd>
+                </div>
+                <div class="col-md-4 "> 
+                  <dt>Developed by: </dt><dd>Guido van Rossum</dd>
+                </div>  
+                <div class="col-md-4 ">
+                  <dt>Filename extensions:</dt><dd>  .py,.pyi,.pyc,.pyd,.pyw,.pyz (since 3.5),.pyo (prior to 3.5)</dd>
+                </div>  
+                <div class="col-md-4 ">
+                  <dl><dt>Paradigm:</dt><dd> Multi-paradigm: object-oriented, procedural (imperative), functional, structured, reflective</dd>
+                </div>
+                <div class="col-md-4 ">
+                  <dt>Initial release:</dt><dd> 20 February 1991; 31 years ago</dd>
+                </div>
+                <div class="col-md-4 ">
+                  <a class="typ5 btn" href="learn.html">View more</a>
+                </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="J">
+    <div class="card mb-10 fade-in" >
+      <div class="row g-0 text-center">
+        <div class="col-md-2 ">
+          <img src="img/home/logo6.png" class="img-fluid rounded-start im-size" alt="...">
+        </div>
+        <div class="col-md-10">
+          <div class="card-body">
+            <h5><em class="typ6">Java</em></h5>
+            <p class="card-text">Java is a high-level, class-based, object-oriented 
+              programming language that is designed to have as few implementation 
+              dependencies as possible.
+              <div class="row g-0 text-center">
+                <div class="col-md-4 ">
+                  <dt>Latest release: </dt><dd>  Java SE 19 / 20 September 2022</dd>
+                </div>
+                <div class="col-md-4 "> 
+                  <dt>Developed by: </dt><dd>James Gosling</dd>
+                </div>  
+                <div class="col-md-4 ">
+                  <dt>Typing discipline:</dt><dd> Static, strong, safe, nominative,</dd>
+                </div>  
+                <div class="col-md-4 ">
+                  <dl><dt>Paradigm:</dt><dd> Multi-paradigm: generic, object-oriented (class-based),
+                     functional, imperative, reflective,</dd>
+                </div>
+                <div class="col-md-4 ">
+                  <dt>Initial release:</dt><dd> May 23, 1995; 27 years ago</dd>
+                </div>
+                <div class="col-md-4 ">
+                  <a class="typ6 btn" href="learn.html">View more</a>
+                </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mysql">
+    <div class="card mb-10 fade-in" ;>
+      <div class="row g-0 text-center">
+        <div class="col-md-2 " style="max-width: 50em;">
+          <img src="img/home/logo7.svg" class="img-fluid rounded-start im-size"  alt="...">
+        </div>
+        <div class="col-md-10">
+          <div class="card-body">
+            <h5><em class="typ7">My SQL</em></h5>
+            <p class="card-text">MySQL is an open-source relational database management system.
+               Its name is a combination of "My", the name of co-founder Michael Widenius's daughter My,
+                and "SQL", the acronym for Structured Query Language.
+              <div class="row g-0 text-center">
+                <div class="col-md-4 ">
+                  <dt>Latest release: </dt><dd> 8.0.31 / 11 October 2022</dd>
+                </div>
+                <div class="col-md-4 "> 
+                  <dt>Developed by: </dt><dd>Oracle, MySQL AB, Michael Widenius, Sun Microsystems, David Axmark</dd>
+                </div>  
+                <div class="col-md-4 ">
+                  <dt>Initial release:</dt><dd> May 23, 1995</dd>
+                </div>
+                <div class="col-md-4 ">
+                  <dt> </dt><dd> </dd>
+                </div>  
+                <div class="col-md-4 ">
+                  <dl><dt> </dt><dd> </dd>
+                </div>
+                <div class="col-md-4 ">
+                  <a class="typ7 btn" href="learn.html">View more</a>
+                </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="oracle">
+    <div class="card mb-10 fade-in" >
+      <div class="row g-0 text-center">
+        <div class="col-md-2 ">
+          <img src="img/home/logo8.png" class="img-fluid rounded-start im-size" alt="...">
+        </div>
+        <div class="col-md-10">
+          <div class="card-body">
+            <h5><em class="typ8">Oracle</em></h5>
+            <p class="card-text">Oracle Database is a multi-model database management system produced
+               and marketed by Oracle Corporation. It is a database commonly used 
+               for running online transaction processing, data warehousing and 
+               mixed database workloads
+              <div class="row g-0 text-center">
+                <div class="col-md-4 ">
+                  <dt>Latest release: </dt><dd> 21c / 13 January 2021</dd>
+                </div>
+                <div class="col-md-4 "> 
+                  <dt>Developed by: </dt><dd>Oracle</dd>
+                </div>  
+                <div class="col-md-4 ">
+                  <dt>License</dt><dd> Proprietary</dd>
+                </div>  
+                <div class="col-md-4 ">
+                  <dl><dt>Extended to:</dt> <dd></dd>
+                </div>
+                <div class="col-md-4 ">
+                  <dt>Initial release:</dt><dd> 1979</dd>
+                </div>
+                <div class="col-md-4 ">
+                  <a class="typ8 btn" href="learn.html">View more</a>
+                </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="React">
+    <div class="card mb-10 fade-in" ;>
+      <div class="row g-0 text-center">
+        <div class="col-md-2" style="max-width: 50em;">
+          <img src="img/home/logo9.png" class="img-fluid rounded-start im-size"  alt="...">
+        </div>
+        <div class="col-md-10">
+          <div class="card-body">
+            <h5 ><em class="typ9">React</em></h5>
+            <p class="card-text">React is a free and open-source front-end JavaScript library
+               for building user interfaces based on UI components. It is maintained 
+               by Meta and a community of individual developers and companies.
+              <div class="row g-0 text-center">
+                <div class="col-md-4 ">
+                  <dt>Latest release: </dt><dd> 18.2.0 / 14 June 2022</dd>
+                </div>
+                <div class="col-md-4 "> 
+                  <dt>Developed by: </dt><dd>Meta and community</dd>
+                </div>  
+                <div class="col-md-4 ">
+                  <dt>Platform:</dt><dd>  Web platform</dd>
+                </div>  
+                <div class="col-md-4 ">
+                  <dt> </dt> <dd> </dd>
+                </div> 
+                <div class="col-md-4 ">
+                  <dt>Initial release:</dt><dd> May 29, 2013</dd>
+                </div>
+                <div class="col-md-4 ">
+                  <a class="typ9 btn" href="learn.html">View more</a>
+                </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Bootstrap">
+    <div class="card mb-10 fade-in" >
+      <div class="row g-0 text-center">
+        <div class="col-md-2 ">
+          <img src="img/home/logo11.png" class="img-fluid rounded-start im-size" alt="...">
+        </div>
+        <div class="col-md-10">
+          <div class="card-body">
+            <h5><em class="typ10">Bootstrap</em></h5>
+            <p class="card-text">Bootstrap is a free and open-source CSS framework directed at responsive,
+               mobile-first front-end web development. It contains HTML, CSS and JavaScript-based
+                design templates for typography, forms, buttons, navigation, and other interface components.
+              <div class="row g-0 text-center">
+                <div class="col-md-4 ">
+                  <dt>Latest release: </dt><dd> Bootstrap 5.1</dd>
+                </div>
+                <div class="col-md-4 "> 
+                  <dt>Developed by: </dt><dd>Bootstrap Core Team</dd>
+                </div>  
+                <div class="col-md-4 ">
+                  <dt>website:</dt><dd> https://getbootstrap.com</dd>
+                </div>  
+                <div class="col-md-4 ">
+                  <dl><dt> </dt><dd> </dd>
+                </div>
+                <div class="col-md-4 ">
+                  <dt>Initial release:</dt><dd> August 19, 2011</dd>
+                </div>
+                <div class="col-md-4 ">
+                  <a class="typ10 btn" href="learn.html">View more</a>
+                </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Angular">
+    <div class="card mb-10 fade-in" ;>
+      <div class="row g-0 text-center">
+        <div class="col-md-2" style="max-width: 50em;">
+          <img src="img/home/logo10.png" class="img-fluid rounded-start im-size"  alt="...">
+        </div>
+        <div class="col-md-10">
+          <div class="card-body">
+            <h5 ><em class="typ11">Angular</em></h5>
+            <p class="card-text">Angular is a TypeScript-based, free and open-source web application framework 
+              led by the Angular Team at Google and by a community of individuals and corporations. Angular is a 
+              complete rewrite from the same team that built AngularJS.
+              <div class="row g-0 text-center">
+                <div class="col-md-4 ">
+                  <dt>Latest release: </dt><dd> 14.0.0-next.0 / 26 January 2022</dd>
+                </div>
+                <div class="col-md-4 "> 
+                  <dt>Developed by: </dt><dd>Google</dd>
+                </div>  
+                <div class="col-md-4 ">
+                  <dt>Programming languages:</dt><dd> TypeScript, AngularJS</dd>
+                </div>  
+                <div class="col-md-4 ">
+                  <dl><dt>WebSite  to:</dt><dd> https://angular.io/</dd>
+                </div>
+                <div class="col-md-4 ">
+                  <dt>Initial release:</dt><dd> September 14, 2016</dd>
+                </div>
+                <div class="col-md-4 ">
+                  <a class="typ11 btn" href="learn.html">View more</a>
+                </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--------------footer section------------->
+  <section id="footer">
+    <img class="footer-img" src="img/wave 2.png" alt="">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p >This Web Site was made in hopes of helping the future web developers so they could choose their future paths while
+              being equiped with the proper knowledge.
+          </p>
+          <div class="text-center">
+           
+            <dt>Mail: </dt><dd><address><a href="mailto:WebFundamentals@gmail.com">WebFundamentals@gmail.com</a></address></dd>           
+            <dt>Phone No::</dt><dd><a href="tel:+">+328445632</a></dd>     
+            <dt>Address:</dt><dd>234/C,Dalugama,Kelaniya, Sri Lanka </dd>
+            <dt>For more:</dt><dd><a href="contact.html">Contact Us</a></dd>
+           <p class="title3">Join With Us :<br><a href="https://www.facebook.com" target="_blank"><img class="img-wd" src="img/fb.png"></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="img-wd" src="img/insta.png"></a>
+            <a href="https://www.twitter.com" target="_blank"><img class="img-wd" src="img/twit.png"></a>
+            <a href="https://www.whatsapp.com" target="_blank"><img class="img-wd" src="img/whats.png"></a>
+            </p>
+          </div>  
+        </div>
+      
+        <div class="col-md-6">
+          <h1>Thank You for <br>visiting Web Fundamentals.com 
+          <img class="img-wd-1" src="img/icon.png"></h1>
+        </div>
+      </div>
+  </div>
+</div>
+  </section>
+  </body>
+  </html>
